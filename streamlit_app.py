@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 # 포함 문항: 20~24, 29~42
-ALLOWED_QUESTIONS = set(range(20, 24)) | set(range(29, 42))
+ALLOWED_QUESTIONS = set(range(20, 25)) | set(range(29, 43))
 
 
 # =========================================================
