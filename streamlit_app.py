@@ -820,7 +820,6 @@ def remove_page_headers_footers(text):
 #
 # Reading:
 #   20~42
-#   46~50
 #
 # 제외:
 #   1~17
