@@ -13,8 +13,8 @@ st.set_page_config(
     layout="wide"
 )
 
-# 포함 문항: 18~24, 29~42
-ALLOWED_QUESTIONS = set(range(18, 25)) | set(range(29, 43))
+# 포함 문항: 20~24, 29~42
+ALLOWED_QUESTIONS = set(range(20, 24)) | set(range(29, 42))
 
 
 # =========================================================
