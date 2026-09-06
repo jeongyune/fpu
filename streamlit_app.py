@@ -11,7 +11,7 @@ except ImportError:
 
 
 # ============================================================
-# 기본 설정
+# PAGE CONFIG
 # ============================================================
 
 st.set_page_config(
@@ -22,7 +22,7 @@ st.set_page_config(
 
 
 # ============================================================
-# 주제 분류 체계
+# TAXONOMY
 # ============================================================
 
 TAXONOMY = {
@@ -36,6 +36,7 @@ TAXONOMY = {
         "Learning",
         "Perception",
     ],
+
     "Biology": [
         "Evolution",
         "Ecology",
@@ -45,12 +46,14 @@ TAXONOMY = {
         "Plants",
         "Microbiology",
     ],
+
     "Medicine": [
         "Health",
         "Disease",
         "Nutrition",
         "Medical Technology",
     ],
+
     "Economics": [
         "Markets",
         "Behavioral Economics",
@@ -59,6 +62,7 @@ TAXONOMY = {
         "Incentives",
         "Business",
     ],
+
     "Technology": [
         "AI/Computing",
         "Engineering",
@@ -66,12 +70,14 @@ TAXONOMY = {
         "Internet/Media",
         "Technology & Society",
     ],
+
     "Environment": [
         "Climate",
         "Conservation",
         "Pollution",
         "Natural Resources",
     ],
+
     "Social Science": [
         "Sociology",
         "Education",
@@ -80,6 +86,7 @@ TAXONOMY = {
         "Communication",
         "Demography",
     ],
+
     "History": [
         "World History",
         "Political History",
@@ -87,23 +94,27 @@ TAXONOMY = {
         "Cultural History",
         "Biography",
     ],
+
     "Humanities": [
         "Philosophy",
         "Ethics",
         "Religion",
         "Language",
     ],
+
     "Arts & Literature": [
         "Visual Art",
         "Music",
         "Literature",
         "Architecture",
     ],
+
     "Geography": [
         "Places & Regions",
         "Cities",
         "Population & Geography",
     ],
+
     "Everyday Life": [
         "Habits",
         "Relationships",
@@ -112,111 +123,199 @@ TAXONOMY = {
         "Travel",
         "Lifestyle",
     ],
+
     "Other": [],
 }
 
 
 # ============================================================
-# 키워드
+# KEYWORDS
 # ============================================================
 
 KEYWORDS = {
     "Psychology": {
         "Memory": [
-            "memory", "remember", "recall", "forget"
+            "memory",
+            "remember",
+            "recall",
+            "forget",
         ],
+
         "Cognition": [
-            "cognitive", "cognition", "attention",
-            "reasoning", "perception"
+            "cognitive",
+            "cognition",
+            "attention",
+            "reasoning",
+            "perception",
         ],
+
         "Decision Making": [
-            "decision", "choice", "choose", "judgment"
+            "decision",
+            "choice",
+            "choose",
+            "judgment",
         ],
+
         "Emotion": [
-            "emotion", "fear", "happiness",
-            "sadness", "stress"
+            "emotion",
+            "fear",
+            "happiness",
+            "sadness",
+            "stress",
         ],
+
         "Social Psychology": [
-            "social influence", "conformity",
-            "peer pressure", "group"
+            "social influence",
+            "conformity",
+            "peer pressure",
+            "group",
         ],
+
         "Behavior": [
-            "behavior", "behaviour", "habit"
+            "behavior",
+            "behaviour",
+            "habit",
         ],
+
         "Learning": [
-            "learn", "learning", "education", "student"
+            "learn",
+            "learning",
+            "education",
+            "student",
         ],
+
         "Perception": [
-            "perception", "visual perception", "sensory"
+            "perception",
+            "visual perception",
+            "sensory",
         ],
     },
 
     "Biology": {
         "Evolution": [
-            "evolution", "natural selection",
-            "adaptation", "species"
+            "evolution",
+            "natural selection",
+            "adaptation",
+            "species",
         ],
+
         "Ecology": [
-            "ecosystem", "ecology", "predator",
-            "food web", "habitat"
+            "ecosystem",
+            "ecology",
+            "predator",
+            "food web",
+            "habitat",
         ],
+
         "Animal Behavior": [
-            "animal behavior", "migration",
-            "mating", "territory"
+            "animal behavior",
+            "migration",
+            "mating",
+            "territory",
         ],
+
         "Human Biology": [
-            "human body", "brain", "cell",
-            "organ", "hormone"
+            "human body",
+            "brain",
+            "cell",
+            "organ",
+            "hormone",
         ],
+
         "Genetics": [
-            "gene", "genetic", "dna", "heredity"
+            "gene",
+            "genetic",
+            "dna",
+            "heredity",
         ],
+
         "Plants": [
-            "plant", "flower", "root",
-            "seed", "photosynthesis"
+            "plant",
+            "flower",
+            "root",
+            "seed",
+            "photosynthesis",
         ],
+
         "Microbiology": [
-            "bacteria", "virus", "microbe",
-            "microorganism"
+            "bacteria",
+            "virus",
+            "microbe",
+            "microorganism",
         ],
     },
 
     "Medicine": {
         "Health": [
-            "health", "healthy", "disease prevention"
+            "health",
+            "healthy",
+            "disease prevention",
         ],
+
         "Disease": [
-            "disease", "illness", "infection", "symptom"
+            "disease",
+            "illness",
+            "infection",
+            "symptom",
         ],
+
         "Nutrition": [
-            "nutrition", "nutrient", "diet",
-            "calorie", "food"
+            "nutrition",
+            "nutrient",
+            "diet",
+            "calorie",
+            "food",
         ],
+
         "Medical Technology": [
-            "medical technology", "diagnosis",
-            "surgery", "medical device"
+            "medical technology",
+            "diagnosis",
+            "surgery",
+            "medical device",
         ],
     },
 
     "Economics": {
         "Markets": [
-            "market", "price", "supply", "demand"
+            "market",
+            "price",
+            "supply",
+            "demand",
         ],
+
         "Behavioral Economics": [
-            "behavioral economics", "bias",
-            "rational", "irrational"
+            "behavioral economics",
+            "bias",
+            "rational",
+            "irrational",
         ],
+
         "Trade": [
-            "trade", "import", "export", "tariff"
+            "trade",
+            "import",
+            "export",
+            "tariff",
         ],
+
         "Money": [
-            "money", "currency", "bank", "inflation"
+            "money",
+            "currency",
+            "bank",
+            "inflation",
         ],
+
         "Incentives": [
-            "incentive", "reward", "cost", "benefit"
+            "incentive",
+            "reward",
+            "cost",
+            "benefit",
         ],
+
         "Business": [
-            "business", "company", "firm", "consumer"
+            "business",
+            "company",
+            "firm",
+            "consumer",
         ],
     },
 
@@ -228,168 +327,269 @@ KEYWORDS = {
             "computer",
             "computing",
         ],
+
         "Engineering": [
-            "engineering", "engineer",
-            "design", "machine"
+            "engineering",
+            "engineer",
+            "design",
+            "machine",
         ],
+
         "Transportation": [
-            "transportation", "vehicle",
-            "car", "train", "aviation"
+            "transportation",
+            "vehicle",
+            "car",
+            "train",
+            "aviation",
         ],
+
         "Internet/Media": [
-            "internet", "social media",
-            "media", "online"
+            "internet",
+            "social media",
+            "media",
+            "online",
         ],
+
         "Technology & Society": [
-            "technology", "technological", "digital"
+            "technology",
+            "technological",
+            "digital",
         ],
     },
 
     "Environment": {
         "Climate": [
-            "climate", "global warming",
-            "greenhouse gas"
+            "climate",
+            "global warming",
+            "greenhouse gas",
         ],
+
         "Conservation": [
-            "conservation", "endangered",
-            "biodiversity"
+            "conservation",
+            "endangered",
+            "biodiversity",
         ],
+
         "Pollution": [
-            "pollution", "waste",
-            "plastic", "contamination"
+            "pollution",
+            "waste",
+            "plastic",
+            "contamination",
         ],
+
         "Natural Resources": [
             "natural resource",
-            "water", "forest", "energy"
+            "water",
+            "forest",
+            "energy",
         ],
     },
 
     "Social Science": {
         "Sociology": [
-            "society", "social class",
-            "community", "institution"
+            "society",
+            "social class",
+            "community",
+            "institution",
         ],
+
         "Education": [
-            "education", "school",
-            "teacher", "student", "curriculum"
+            "education",
+            "school",
+            "teacher",
+            "student",
+            "curriculum",
         ],
+
         "Politics/Government": [
-            "government", "political",
-            "president", "policy", "election"
+            "government",
+            "political",
+            "president",
+            "policy",
+            "election",
         ],
+
         "Anthropology": [
-            "anthropology", "custom",
-            "ritual", "culture"
+            "anthropology",
+            "custom",
+            "ritual",
+            "culture",
         ],
+
         "Communication": [
             "communication",
-            "conversation", "language"
+            "conversation",
+            "language",
         ],
+
         "Demography": [
-            "population", "birth rate",
-            "demographic", "aging"
+            "population",
+            "birth rate",
+            "demographic",
+            "aging",
         ],
     },
 
     "History": {
         "World History": [
-            "ancient", "medieval",
-            "empire", "war", "historical"
+            "ancient",
+            "medieval",
+            "empire",
+            "war",
+            "historical",
         ],
+
         "Political History": [
-            "president", "revolution",
-            "government", "political"
+            "president",
+            "revolution",
+            "government",
+            "political",
         ],
+
         "Social History": [
-            "workers", "class", "social history"
+            "workers",
+            "class",
+            "social history",
         ],
+
         "Cultural History": [
-            "tradition", "cultural", "culture"
+            "tradition",
+            "cultural",
+            "culture",
         ],
+
         "Biography": [
-            "born", "died",
-            "biography", "life of"
+            "born",
+            "died",
+            "biography",
+            "life of",
         ],
     },
 
     "Humanities": {
         "Philosophy": [
-            "philosophy", "philosopher"
+            "philosophy",
+            "philosopher",
         ],
+
         "Ethics": [
-            "ethical", "ethics",
-            "moral", "right and wrong"
+            "ethical",
+            "ethics",
+            "moral",
+            "right and wrong",
         ],
+
         "Religion": [
-            "religion", "religious",
-            "church", "god"
+            "religion",
+            "religious",
+            "church",
+            "god",
         ],
+
         "Language": [
-            "linguistic", "grammar",
-            "word", "language"
+            "linguistic",
+            "grammar",
+            "word",
+            "language",
         ],
     },
 
     "Arts & Literature": {
         "Visual Art": [
-            "painting", "artist",
-            "sculpture", "artwork"
+            "painting",
+            "artist",
+            "sculpture",
+            "artwork",
         ],
+
         "Music": [
-            "music", "musician",
-            "song", "composer"
+            "music",
+            "musician",
+            "song",
+            "composer",
         ],
+
         "Literature": [
-            "novel", "poem",
-            "poetry", "literature", "fiction"
+            "novel",
+            "poem",
+            "poetry",
+            "literature",
+            "fiction",
         ],
+
         "Architecture": [
             "architecture",
-            "building", "architect"
+            "building",
+            "architect",
         ],
     },
 
     "Geography": {
         "Places & Regions": [
-            "region", "continent",
-            "country", "geography"
+            "region",
+            "continent",
+            "country",
+            "geography",
         ],
+
         "Cities": [
-            "city", "urban", "town"
+            "city",
+            "urban",
+            "town",
         ],
+
         "Population & Geography": [
-            "population", "rural",
-            "urban", "migration"
+            "population",
+            "rural",
+            "urban",
+            "migration",
         ],
     },
 
     "Everyday Life": {
         "Habits": [
-            "habit", "routine", "daily"
+            "habit",
+            "routine",
+            "daily",
         ],
+
         "Relationships": [
-            "friend", "family", "relationship"
+            "friend",
+            "family",
+            "relationship",
         ],
+
         "Work": [
-            "work", "job",
-            "employee", "workplace"
+            "work",
+            "job",
+            "employee",
+            "workplace",
         ],
+
         "Consumer Behavior": [
-            "consumer", "shopping", "purchase"
+            "consumer",
+            "shopping",
+            "purchase",
         ],
+
         "Travel": [
-            "travel", "tourist",
-            "trip", "journey"
+            "travel",
+            "tourist",
+            "trip",
+            "journey",
         ],
+
         "Lifestyle": [
-            "lifestyle", "leisure", "hobby"
+            "lifestyle",
+            "leisure",
+            "hobby",
         ],
     },
 }
 
 
 # ============================================================
-# 데이터 구조
+# DATA COLUMNS
 # ============================================================
 
 COLUMNS = [
@@ -397,6 +597,7 @@ COLUMNS = [
     "grade",
     "exam",
     "question",
+    "question_text",
     "question_type",
     "primary_topic",
     "secondary_topic",
@@ -408,7 +609,7 @@ COLUMNS = [
 
 
 # ============================================================
-# 메타데이터 추출
+# METADATA
 # ============================================================
 
 def infer_metadata(filename):
@@ -417,17 +618,17 @@ def infer_metadata(filename):
 
     year_match = re.search(
         r"(20\d{2})",
-        name
+        name,
     )
 
     month_match = re.search(
         r"(\d{1,2})월",
-        name
+        name,
     )
 
     grade_match = re.search(
         r"고\s*([123])",
-        name
+        name,
     )
 
     return {
@@ -436,11 +637,13 @@ def infer_metadata(filename):
             if year_match
             else ""
         ),
+
         "grade": (
             int(grade_match.group(1))
             if grade_match
             else ""
         ),
+
         "exam": (
             f"{month_match.group(1)}월"
             if month_match
@@ -450,12 +653,12 @@ def infer_metadata(filename):
 
 
 # ============================================================
-# 자동 분류
+# CLASSIFICATION
 # ============================================================
 
 def classify(text):
 
-    text_lower = text.lower()
+    text_lower = str(text).lower()
 
     hits = []
 
@@ -463,12 +666,13 @@ def classify(text):
 
         for secondary, words in secondary_topics.items():
 
-            score = sum(
-                text_lower.count(
+            score = 0
+
+            for word in words:
+
+                score += text_lower.count(
                     word.lower()
                 )
-                for word in words
-            )
 
             if score > 0:
 
@@ -481,39 +685,43 @@ def classify(text):
                 )
 
     hits.sort(
-        reverse=True
+        key=lambda x: x[0],
+        reverse=True,
     )
 
     if not hits:
 
         return "Other", "", ""
 
-    best = hits[0]
+    best_score, best_primary, best_secondary = hits[0]
 
     related = []
 
-    for item in hits[1:]:
+    for score, primary, secondary in hits[1:]:
 
-        if item[1] == best[1]:
+        if primary == best_primary:
 
             related.append(
-                item[2]
+                secondary
             )
 
         if len(related) >= 2:
+
             break
 
     return (
-        best[1],
-        best[2],
+        best_primary,
+        best_secondary,
         ", ".join(
-            dict.fromkeys(related)
+            dict.fromkeys(
+                related
+            )
         ),
     )
 
 
 # ============================================================
-# PDF 텍스트 추출
+# PDF TEXT EXTRACTION
 # ============================================================
 
 def extract_text(uploaded_file):
@@ -541,13 +749,13 @@ def extract_text(uploaded_file):
         pages
     )
 
-    if len(
-        re.sub(
-            r"\s+",
-            "",
-            text
-        )
-    ) < 200:
+    compact = re.sub(
+        r"\s+",
+        "",
+        text,
+    )
+
+    if len(compact) < 200:
 
         return None
 
@@ -555,7 +763,7 @@ def extract_text(uploaded_file):
 
 
 # ============================================================
-# 페이지 머리말 / 꼬리말 제거
+# REMOVE PDF PAGE HEADERS / FOOTERS
 # ============================================================
 
 def remove_page_headers_footers(text):
@@ -569,30 +777,33 @@ def remove_page_headers_footers(text):
         stripped = line.strip()
 
         if not stripped:
+
             cleaned.append("")
+
             continue
 
-        # 예:
-        # 고2 영어영역 3
-        # 고2 영어영역
+        # 고1/고2/고3 영어영역
         if re.search(
             r"고\s*[123]\s*영어영역",
-            stripped
+            stripped,
         ):
+
             continue
 
-        # 페이지 번호처럼 보이는 단독 숫자
+        # 단독 페이지 번호
         if re.fullmatch(
             r"\d{1,3}",
-            stripped
+            stripped,
         ):
+
             continue
 
         # 긴 선
         if re.fullmatch(
             r"[-_=—–]{5,}",
-            stripped
+            stripped,
         ):
+
             continue
 
         cleaned.append(
@@ -605,9 +816,9 @@ def remove_page_headers_footers(text):
 
 
 # ============================================================
-# 문항 분리
+# QUESTION SPLITTING
 #
-# 포함:
+# Reading:
 #   20~42
 #   46~50
 #
@@ -626,9 +837,16 @@ def split_questions(text):
         text
     )
 
+    # 문항 번호가 새로운 줄에 있는 경우
+    pattern = (
+        r"(?m)^\s*"
+        r"(1[89]|[2-4]\d|50)"
+        r"\s*[\.\)]?\s+"
+    )
+
     matches = list(
         re.finditer(
-            r"(?m)^\s*(1[89]|[2-4]\d|50)\s*[\.\)]?\s+",
+            pattern,
             text,
         )
     )
@@ -638,24 +856,35 @@ def split_questions(text):
         + list(range(46, 51))
     )
 
-    matches = [
-        match
-        for match in matches
-        if int(match.group(1))
-        in allowed
-    ]
+    valid_matches = []
 
-    rows = []
+    for match in matches:
 
-    for i, match in enumerate(matches):
-
-        question = int(
+        number = int(
             match.group(1)
         )
 
-        if i + 1 < len(matches):
+        if number in allowed:
 
-            end = matches[
+            valid_matches.append(
+                match
+            )
+
+    rows = []
+
+    for i, match in enumerate(
+        valid_matches
+    ):
+
+        question_number = int(
+            match.group(1)
+        )
+
+        if i + 1 < len(
+            valid_matches
+        ):
+
+            end = valid_matches[
                 i + 1
             ].start()
 
@@ -667,11 +896,11 @@ def split_questions(text):
             match.end():end
         ].strip()
 
-        if len(block) >= 80:
+        if len(block) >= 50:
 
             rows.append(
                 (
-                    question,
+                    question_number,
                     block,
                 )
             )
@@ -680,12 +909,173 @@ def split_questions(text):
 
 
 # ============================================================
-# 문항 블록 정리
-#
-# 본문
-# 참고 영어단어
-# 선지
-# 로 분리
+# QUESTION TEXT / BODY SPLIT
+# ============================================================
+
+def split_question_text_and_body(block):
+
+    block = block.strip()
+
+    # PDF에서 줄바꿈이 사라져도
+    # 문제 발문은 대체로 ? 로 끝남.
+    #
+    # 예:
+    # 다음 글에서 필자가 주장하는 바로 가장 적절한 것은? [3점] We can sometimes...
+    #
+    # -> question_text:
+    # 다음 글에서 필자가 주장하는 바로 가장 적절한 것은? [3점]
+    #
+    # -> body:
+    # We can sometimes...
+
+    match = re.search(
+        r"(.+?\?)"
+        r"\s*"
+        r"(\[\s*\d+\s*점\s*\])?"
+        r"\s*"
+        r"([A-Z][A-Za-z])",
+        block,
+        flags=re.DOTALL,
+    )
+
+    if match:
+
+        question_text = match.group(1).strip()
+
+        score_text = match.group(2)
+
+        body_start = match.start(3)
+
+        body = block[
+            body_start:
+        ].strip()
+
+        if score_text:
+
+            question_text += (
+                " "
+                + re.sub(
+                    r"\s+",
+                    "",
+                    score_text,
+                )
+            )
+
+        return (
+            question_text,
+            body,
+        )
+
+    # --------------------------------------------------------
+    # 대체 방법:
+    # 첫 번째 ? 를 기준으로 분리
+    # --------------------------------------------------------
+
+    question_mark = block.find("?")
+
+    if question_mark != -1:
+
+        question_text = block[
+            :question_mark + 1
+        ].strip()
+
+        remaining = block[
+            question_mark + 1:
+        ].strip()
+
+        score_match = re.match(
+            r"(\[\s*\d+\s*점\s*\])\s*",
+            remaining,
+        )
+
+        if score_match:
+
+            question_text += (
+                " "
+                + re.sub(
+                    r"\s+",
+                    "",
+                    score_match.group(1),
+                )
+            )
+
+            remaining = remaining[
+                score_match.end():
+            ].strip()
+
+        return (
+            question_text,
+            remaining,
+        )
+
+    return (
+        "",
+        block,
+    )
+
+
+# ============================================================
+# CHOICE PARSING
+# ============================================================
+
+def parse_choices(text):
+
+    # ① ~~~ ② ~~~ ③ ~~~ 형태를
+    #
+    # ① ~~~
+    # ② ~~~
+    # ③ ~~~
+    #
+    # 으로 변경
+
+    text = re.sub(
+        r"\s*([①②③④⑤])\s*",
+        r"\n\1 ",
+        text,
+    )
+
+    text = re.sub(
+        r"\n{2,}",
+        "\n",
+        text,
+    )
+
+    return text.strip()
+
+
+# ============================================================
+# REFERENCE WORD PARSING
+# ============================================================
+
+def parse_reference_words(text):
+
+    text = text.strip()
+
+    # 불필요한 bullet 제거
+    text = re.sub(
+        r"^[•●▪]\s*",
+        "",
+        text,
+    )
+
+    # 여러 bullet이 붙어 있는 경우
+    text = re.sub(
+        r"\s*[•●▪]\s*",
+        "\n",
+        text,
+    )
+
+    text = re.sub(
+        r"\n{2,}",
+        "\n",
+        text,
+    )
+
+    return text.strip()
+
+
+# ============================================================
+# QUESTION BLOCK PARSER
 # ============================================================
 
 def parse_question_block(block):
@@ -694,98 +1084,102 @@ def parse_question_block(block):
         block
     )
 
-    # 여러 공백 정리
-    block = re.sub(
-        r"[ \t]+",
-        " ",
-        block
-    )
-
-    # 앞뒤 빈 줄 정리
     block = block.strip()
+
+    # --------------------------------------------------------
+    # 문제 발문 / 본문
+    # --------------------------------------------------------
+
+    question_text, remaining = (
+        split_question_text_and_body(
+            block
+        )
+    )
 
     # --------------------------------------------------------
     # 선지 찾기
     # --------------------------------------------------------
 
     choice_match = re.search(
-        r"(?:^|\n|\s)([①②③④⑤])\s*",
-        block
+        r"(?<!\S)[①]",
+        remaining,
     )
 
     choices = ""
 
     if choice_match:
 
-        before_choices = block[
+        before_choices = remaining[
             :choice_match.start()
         ]
 
-        choices_part = block[
+        choices_part = remaining[
             choice_match.start():
         ]
 
-        # ① ② ③ ④ ⑤ 앞에 줄바꿈
-        choices_part = re.sub(
-            r"\s*([①②③④⑤])\s*",
-            r"\n\1 ",
+        choices = parse_choices(
             choices_part
         )
 
-        choices = choices_part.strip()
-
-        block = before_choices.strip()
+        remaining = (
+            before_choices
+            .strip()
+        )
 
     # --------------------------------------------------------
     # 참고 영어단어 찾기
     # --------------------------------------------------------
 
-    reference_match = re.search(
-        r"(?:^|\n|\s)[•●▪]\s*",
-        block
-    )
-
     reference_words = ""
 
-    if reference_match:
+    bullet_match = re.search(
+        r"(?m)^\s*[•●▪]\s*",
+        remaining,
+    )
 
-        body_part = block[
-            :reference_match.start()
+    if bullet_match:
+
+        body_part = remaining[
+            :bullet_match.start()
         ]
 
-        reference_part = block[
-            reference_match.start():
+        reference_part = remaining[
+            bullet_match.start():
         ]
 
-        reference_words = reference_part.strip()
+        reference_words = (
+            parse_reference_words(
+                reference_part
+            )
+        )
 
-        block = body_part.strip()
+        remaining = body_part.strip()
 
-    # 일부 PDF에서는 참고 단어가
-    # '참고 영어단어'라는 제목으로 추출될 수 있음
     else:
 
+        # '참고 영어단어'라는 문구가 있는 경우
         reference_match = re.search(
             r"참고\s*영어\s*단어",
-            block
+            remaining,
         )
 
         if reference_match:
 
-            body_part = block[
+            body_part = remaining[
                 :reference_match.start()
             ]
 
-            reference_part = block[
+            reference_part = remaining[
                 reference_match.end():
             ]
 
             reference_words = (
-                reference_part
-                .strip()
+                parse_reference_words(
+                    reference_part
+                )
             )
 
-            block = body_part.strip()
+            remaining = body_part.strip()
 
     # --------------------------------------------------------
     # 본문 정리
@@ -794,40 +1188,11 @@ def parse_question_block(block):
     body = re.sub(
         r"\n{3,}",
         "\n\n",
-        block
+        remaining,
     ).strip()
 
-    # --------------------------------------------------------
-    # 참고 단어 정리
-    # --------------------------------------------------------
-
-    if reference_words:
-
-        reference_words = re.sub(
-            r"\s*([①②③④⑤])\s*",
-            r"\n\1 ",
-            reference_words
-        )
-
-        reference_words = re.sub(
-            r"\n{3,}",
-            "\n\n",
-            reference_words
-        ).strip()
-
-    # --------------------------------------------------------
-    # 선지 정리
-    # --------------------------------------------------------
-
-    if choices:
-
-        choices = re.sub(
-            r"\n{3,}",
-            "\n\n",
-            choices
-        ).strip()
-
     return (
+        question_text,
         body,
         reference_words,
         choices,
@@ -835,7 +1200,7 @@ def parse_question_block(block):
 
 
 # ============================================================
-# PDF 분석
+# ANALYZE PDF
 # ============================================================
 
 def analyze_pdf(uploaded_file):
@@ -861,12 +1226,15 @@ def analyze_pdf(uploaded_file):
 
     rows = []
 
-    for question, block in questions:
+    for question_number, block in questions:
 
-        body, reference_words, choices = (
-            parse_question_block(
-                block
-            )
+        (
+            question_text,
+            body,
+            reference_words,
+            choices,
+        ) = parse_question_block(
+            block
         )
 
         primary, secondary, keywords = (
@@ -876,15 +1244,27 @@ def analyze_pdf(uploaded_file):
         rows.append(
             {
                 "year": metadata["year"],
+
                 "grade": metadata["grade"],
+
                 "exam": metadata["exam"],
-                "question": question,
+
+                "question": question_number,
+
+                "question_text": question_text,
+
                 "question_type": "",
+
                 "primary_topic": primary,
+
                 "secondary_topic": secondary,
+
                 "keywords": keywords,
+
                 "body": body,
+
                 "reference_words": reference_words,
+
                 "choices": choices,
             }
         )
@@ -899,47 +1279,64 @@ def analyze_pdf(uploaded_file):
 
 
 # ============================================================
-# CSV 호환 / 기존 데이터 처리
+# NORMALIZE OLD CSV
 # ============================================================
 
 def normalize_dataframe(df):
 
     df = df.copy()
 
-    # 기존 CSV가 passage만 가지고 있는 경우
+    # 기존 데이터에 question_text가 없으면 생성
+    if "question_text" not in df.columns:
+
+        df["question_text"] = ""
+
+        if "passage" in df.columns:
+
+            for idx in df.index:
+
+                old_text = str(
+                    df.loc[
+                        idx,
+                        "passage"
+                    ]
+                )
+
+                qtext, body = (
+                    split_question_text_and_body(
+                        old_text
+                    )
+                )
+
+                df.loc[
+                    idx,
+                    "question_text"
+                ] = qtext
+
+                df.loc[
+                    idx,
+                    "body"
+                ] = body
+
+        else:
+
+            df["question_text"] = ""
+
+    # body가 없는 기존 CSV
     if "body" not in df.columns:
 
         if "passage" in df.columns:
 
-            parsed = df[
-                "passage"
-            ].fillna("").apply(
-                parse_question_block
+            df["body"] = (
+                df["passage"]
+                .fillna("")
             )
-
-            df["body"] = [
-                item[0]
-                for item in parsed
-            ]
-
-            df["reference_words"] = [
-                item[1]
-                for item in parsed
-            ]
-
-            df["choices"] = [
-                item[2]
-                for item in parsed
-            ]
 
         else:
 
             df["body"] = ""
 
-            df["reference_words"] = ""
-
-            df["choices"] = ""
-
+    # 필요한 컬럼 생성
     for column in COLUMNS:
 
         if column not in df.columns:
@@ -952,7 +1349,7 @@ def normalize_dataframe(df):
 
 
 # ============================================================
-# Corpus 병합
+# MERGE CORPUS
 # ============================================================
 
 def merge_corpus(
@@ -1019,7 +1416,7 @@ def merge_corpus(
 
 
 # ============================================================
-# Session State
+# SESSION STATE
 # ============================================================
 
 if "corpus_df" not in st.session_state:
@@ -1032,20 +1429,7 @@ if "corpus_df" not in st.session_state:
 
 
 # ============================================================
-# 제목
-# ============================================================
-
-st.title(
-    "📚 Korean High School English Reading Corpus"
-)
-
-st.caption(
-    "2006–2026 고1·고2·고3 영어 독해 지문 개인용 데이터베이스"
-)
-
-
-# ============================================================
-# 사이드바
+# SIDEBAR
 # ============================================================
 
 with st.sidebar:
@@ -1068,7 +1452,7 @@ with st.sidebar:
         ):
 
             with st.spinner(
-                "PDF를 분석하고 기존 corpus에 추가하는 중..."
+                "PDF를 분석하고 corpus에 추가하는 중..."
             ):
 
                 try:
@@ -1093,7 +1477,7 @@ with st.sidebar:
 
                     else:
 
-                        before = len(
+                        old_count = len(
                             st.session_state[
                                 "corpus_df"
                             ]
@@ -1108,7 +1492,7 @@ with st.sidebar:
                             new_df,
                         )
 
-                        after = len(
+                        new_count = len(
                             st.session_state[
                                 "corpus_df"
                             ]
@@ -1116,8 +1500,8 @@ with st.sidebar:
 
                         st.success(
                             f"완료! "
-                            f"{after - before}개 새 지문 추가 / "
-                            f"현재 총 {after}개"
+                            f"{new_count - old_count}개 새 지문 추가 / "
+                            f"현재 총 {new_count}개"
                         )
 
                 except Exception as error:
@@ -1128,6 +1512,11 @@ with st.sidebar:
 
 
     st.divider()
+
+
+    # ========================================================
+    # CSV
+    # ========================================================
 
     st.header(
         "💾 저장 / 불러오기"
@@ -1151,16 +1540,8 @@ with st.sidebar:
                     csv_file
                 )
 
-                loaded = (
-                    normalize_dataframe(
-                        loaded
-                    )
-                )
-
-                before = len(
-                    st.session_state[
-                        "corpus_df"
-                    ]
+                loaded = normalize_dataframe(
+                    loaded
                 )
 
                 st.session_state[
@@ -1172,16 +1553,10 @@ with st.sidebar:
                     loaded,
                 )
 
-                after = len(
-                    st.session_state[
-                        "corpus_df"
-                    ]
-                )
-
                 st.success(
-                    f"CSV 병합 완료: "
-                    f"{after - before}개 새 항목 / "
-                    f"총 {after}개"
+                    f"CSV 병합 완료 / "
+                    f"현재 총 "
+                    f"{len(st.session_state['corpus_df'])}개"
                 )
 
             except Exception as error:
@@ -1215,7 +1590,9 @@ with st.sidebar:
             use_container_width=True,
         )
 
+
         st.divider()
+
 
         if st.button(
             "⚠️ 현재 corpus 전체 삭제",
@@ -1232,7 +1609,7 @@ with st.sidebar:
 
 
 # ============================================================
-# 현재 데이터
+# MAIN DATA
 # ============================================================
 
 df = normalize_dataframe(
@@ -1247,32 +1624,47 @@ st.session_state[
 
 
 # ============================================================
-# 데이터 없음
+# HEADER
+# ============================================================
+
+st.title(
+    "📚 Korean High School English Reading Corpus"
+)
+
+st.caption(
+    "2006–2026 고1·고2·고3 영어 독해 지문 개인용 데이터베이스"
+)
+
+
+# ============================================================
+# EMPTY STATE
 # ============================================================
 
 if df.empty:
 
     st.info(
-        "왼쪽에서 PDF를 추가하세요."
+        "왼쪽에서 모의고사 PDF를 추가하세요."
     )
 
     st.markdown(
         """
-### 저장되는 문항
+### 자동으로 수집하는 문항
 
 **20~42번 + 46~50번**
 
-### 제외되는 문항
+### 자동으로 제외하는 문항
 
-**1~17번 Listening + 18, 19, 43, 44, 45번**
+**1~17번 Listening**
 
-PDF를 여러 개 추가하면 하나의 corpus에 계속 누적됩니다.
+**18, 19, 43, 44, 45번**
+
+PDF를 여러 번 추가하면 기존 corpus에 계속 누적됩니다.
 """
     )
 
 
 # ============================================================
-# 데이터 표시
+# DATA DISPLAY
 # ============================================================
 
 else:
@@ -1282,9 +1674,9 @@ else:
     )
 
 
-    # --------------------------------------------------------
-    # 검색 / 필터
-    # --------------------------------------------------------
+    # ========================================================
+    # SEARCH / FILTER
+    # ========================================================
 
     st.subheader(
         "🔎 검색 / 필터"
@@ -1294,15 +1686,19 @@ else:
         3
     )
 
+
     with col1:
 
         years = sorted(
             {
-                str(int(v))
+                str(int(float(v)))
                 for v in df["year"]
-                if str(v)
-                .replace(".0", "")
-                .isdigit()
+                if str(v).strip()
+                and str(v).replace(
+                    ".",
+                    "",
+                    1,
+                ).isdigit()
             }
         )
 
@@ -1311,15 +1707,19 @@ else:
             ["전체"] + years,
         )
 
+
     with col2:
 
         grades = sorted(
             {
-                str(int(v))
+                str(int(float(v)))
                 for v in df["grade"]
-                if str(v)
-                .replace(".0", "")
-                .isdigit()
+                if str(v).strip()
+                and str(v).replace(
+                    ".",
+                    "",
+                    1,
+                ).isdigit()
             }
         )
 
@@ -1328,14 +1728,18 @@ else:
             ["전체"] + grades,
         )
 
+
     with col3:
 
         topics = sorted(
-            df[
-                "primary_topic"
-            ]
-            .astype(str)
-            .unique()
+            {
+                str(v)
+                for v in df[
+                    "primary_topic"
+                ]
+                .fillna("")
+                if str(v).strip()
+            }
         )
 
         selected_topic = st.selectbox(
@@ -1345,16 +1749,16 @@ else:
 
 
     search = st.text_input(
-        "본문 / 참고 단어 / 선지 검색",
+        "본문 / 문제 / 참고 영어단어 / 선지 검색",
         placeholder=(
             "예: memory, evolution, market..."
         ),
     )
 
 
-    # --------------------------------------------------------
-    # 필터 적용
-    # --------------------------------------------------------
+    # ========================================================
+    # APPLY FILTER
+    # ========================================================
 
     filtered = df.copy()
 
@@ -1394,7 +1798,13 @@ else:
     if search:
 
         combined_search = (
-            filtered["body"].astype(str)
+            filtered[
+                "question_text"
+            ].astype(str)
+            + " "
+            + filtered[
+                "body"
+            ].astype(str)
             + " "
             + filtered[
                 "reference_words"
@@ -1424,7 +1834,7 @@ else:
 
 
     # ========================================================
-    # 지문 카드
+    # QUESTION CARDS
     # ========================================================
 
     for index, row in filtered.iterrows():
@@ -1437,10 +1847,15 @@ else:
             f"{row['primary_topic']}"
         )
 
+
         with st.expander(
             label,
             expanded=False,
         ):
+
+            # ------------------------------------------------
+            # METADATA
+            # ------------------------------------------------
 
             st.caption(
                 f"연도: {row['year']}  |  "
@@ -1448,6 +1863,107 @@ else:
                 f"시험: {row['exam']}  |  "
                 f"문항: Q{row['question']}"
             )
+
+
+            # ------------------------------------------------
+            # QUESTION
+            # ------------------------------------------------
+
+            if str(
+                row["question_text"]
+            ).strip():
+
+                st.markdown(
+                    "### 문제"
+                )
+
+                st.markdown(
+                    row[
+                        "question_text"
+                    ]
+                )
+
+
+            # ------------------------------------------------
+            # BODY
+            # ------------------------------------------------
+
+            st.markdown(
+                "### 본문"
+            )
+
+            st.markdown(
+                row["body"]
+            )
+
+
+            # ------------------------------------------------
+            # REFERENCE WORDS
+            # ------------------------------------------------
+
+            if str(
+                row[
+                    "reference_words"
+                ]
+            ).strip():
+
+                st.markdown(
+                    "### 참고 영어단어"
+                )
+
+                reference_lines = (
+                    str(
+                        row[
+                            "reference_words"
+                        ]
+                    )
+                    .splitlines()
+                )
+
+                for line in reference_lines:
+
+                    line = line.strip()
+
+                    if line:
+
+                        st.markdown(
+                            f"- {line}"
+                        )
+
+
+            # ------------------------------------------------
+            # CHOICES
+            # ------------------------------------------------
+
+            if str(
+                row["choices"]
+            ).strip():
+
+                st.markdown(
+                    "### 선지"
+                )
+
+                choice_lines = (
+                    str(
+                        row["choices"]
+                    )
+                    .splitlines()
+                )
+
+                for line in choice_lines:
+
+                    line = line.strip()
+
+                    if line:
+
+                        st.markdown(
+                            line
+                        )
+
+
+            # ------------------------------------------------
+            # TOPIC
+            # ------------------------------------------------
 
             st.markdown(
                 f"**Primary Topic:** "
@@ -1464,52 +1980,13 @@ else:
                 )
 
 
-            # ------------------------------------------------
-            # 본문
-            # ------------------------------------------------
-
-            st.markdown(
-                "### 본문"
-            )
-
-            st.write(
-                row["body"]
-            )
-
-
-            # ------------------------------------------------
-            # 참고 영어단어
-            # ------------------------------------------------
-
             if str(
-                row["reference_words"]
+                row["keywords"]
             ).strip():
 
-                st.markdown(
-                    "### 참고 영어단어"
-                )
-
-                st.markdown(
-                    row[
-                        "reference_words"
-                    ]
-                )
-
-
-            # ------------------------------------------------
-            # 선지
-            # ------------------------------------------------
-
-            if str(
-                row["choices"]
-            ).strip():
-
-                st.markdown(
-                    "### 선지"
-                )
-
-                st.markdown(
-                    row["choices"]
+                st.caption(
+                    f"Keywords: "
+                    f"{row['keywords']}"
                 )
 
 
@@ -1532,23 +2009,37 @@ else:
 
 
             # =================================================
-            # 직접 수정
+            # EDIT
             # =================================================
 
             st.divider()
 
             st.markdown(
-                "### ✏️ 이 지문 수정"
+                "## ✏️ 이 지문 수정"
             )
+
+
+            edited_question = st.text_area(
+                "문제",
+                value=str(
+                    row[
+                        "question_text"
+                    ]
+                ),
+                height=100,
+                key=f"question_{index}",
+            )
+
 
             edited_body = st.text_area(
                 "본문",
                 value=str(
                     row["body"]
                 ),
-                height=250,
+                height=300,
                 key=f"body_{index}",
             )
+
 
             edited_reference = st.text_area(
                 "참고 영어단어",
@@ -1557,22 +2048,32 @@ else:
                         "reference_words"
                     ]
                 ),
-                height=120,
+                height=150,
                 key=f"reference_{index}",
             )
+
 
             edited_choices = st.text_area(
                 "선지",
                 value=str(
                     row["choices"]
                 ),
-                height=180,
+                height=220,
                 key=f"choices_{index}",
+                help=(
+                    "①, ②, ③, ④, ⑤를 각각 한 줄에 입력하세요."
+                ),
             )
+
+
+            # ------------------------------------------------
+            # TOPIC EDIT
+            # ------------------------------------------------
 
             edit_col1, edit_col2 = st.columns(
                 2
             )
+
 
             with edit_col1:
 
@@ -1580,25 +2081,27 @@ else:
                     TAXONOMY.keys()
                 )
 
-                current_primary = (
+                current_primary = str(
                     row[
                         "primary_topic"
                     ]
                 )
 
+                if current_primary not in primary_options:
+
+                    current_primary = (
+                        "Other"
+                    )
+
                 edited_primary = st.selectbox(
                     "Primary Topic",
                     primary_options,
-                    index=(
-                        primary_options.index(
-                            current_primary
-                        )
-                        if current_primary
-                        in primary_options
-                        else 0
+                    index=primary_options.index(
+                        current_primary
                     ),
                     key=f"primary_{index}",
                 )
+
 
             with edit_col2:
 
@@ -1606,35 +2109,46 @@ else:
                     ""
                 ] + TAXONOMY.get(
                     edited_primary,
-                    []
+                    [],
                 )
 
-                current_secondary = (
+                current_secondary = str(
                     row[
                         "secondary_topic"
                     ]
                 )
 
+                if (
+                    current_secondary
+                    not in secondary_options
+                ):
+
+                    current_secondary = ""
+
                 edited_secondary = st.selectbox(
                     "Secondary Topic",
                     secondary_options,
-                    index=(
-                        secondary_options.index(
-                            current_secondary
-                        )
-                        if current_secondary
-                        in secondary_options
-                        else 0
+                    index=secondary_options.index(
+                        current_secondary
                     ),
                     key=f"secondary_{index}",
                 )
 
+
+            # ------------------------------------------------
+            # SAVE
+            # ------------------------------------------------
 
             if st.button(
                 "💾 이 지문 수정 저장",
                 key=f"save_{index}",
                 type="primary",
             ):
+
+                df.loc[
+                    index,
+                    "question_text"
+                ] = edited_question
 
                 df.loc[
                     index,
