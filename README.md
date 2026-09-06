@@ -1,127 +1,36 @@
 # 📚 KSAT English Reading Corpus
 
-한국 고등학교 영어 모의고사 Reading 지문을 수집하고, 주제별로 검색·분류할 수 있도록 만든 개인용 corpus 구축 도구입니다.
+한국 고등학교 영어 모의고사 Reading 지문을 수집하고 주제별로 검색·분류하는 개인용 Streamlit 앱입니다.
 
-## ✨ 주요 기능
+## 주요 기능
 
-- PDF에서 영어 지문 텍스트 자동 추출
-- Listening 문항을 제외하고 Reading 지문 분리
-- 연도 / 학년 / 시험월 / 문항 번호 자동 인식
-- 지문별 주제 자동 분류
-- Primary Topic / Secondary Topic 분류
-- 키워드 기반 1차 주제 분석
+- PDF에서 Reading 지문 추출
+- Listening 문항 제외
+- 연도 / 학년 / 시험월 / 문항 자동 인식
+- 주제 1차 자동 분류
+- 여러 PDF를 분석하면 하나의 corpus에 누적
+- 동일한 연도·학년·시험·문항의 중복 자동 제거
 - 주제별 검색 및 필터링
 - 지문 본문 검색
 - 분류 결과 수동 수정
-- CSV 불러오기 / 내보내기
-- 태블릿 환경에 맞춘 Streamlit UI
+- CSV 저장 및 불러오기
 
-## 🗂️ 주제 분류 체계
+## 데이터 구조
 
-### Psychology
-- Memory
-- Cognition
-- Decision Making
-- Emotion
-- Social Psychology
-- Behavior
-- Learning
-- Perception
+각 지문은 다음 정보를 저장합니다.
 
-### Biology
-- Evolution
-- Ecology
-- Animal Behavior
-- Human Biology
-- Genetics
-- Plants
-- Microbiology
+- year
+- grade
+- exam
+- question
+- question_type
+- primary_topic
+- secondary_topic
+- keywords
+- passage
 
-### Medicine
-- Health
-- Disease
-- Nutrition
-- Medical Technology
+## 실행
 
-### Economics
-- Markets
-- Behavioral Economics
-- Trade
-- Money
-- Incentives
-- Business
-
-### Technology
-- AI/Computing
-- Engineering
-- Transportation
-- Internet/Media
-- Technology & Society
-
-### Environment
-- Climate
-- Conservation
-- Pollution
-- Natural Resources
-
-### Social Science
-- Sociology
-- Education
-- Politics/Government
-- Anthropology
-- Communication
-- Demography
-
-### History
-- World History
-- Political History
-- Social History
-- Cultural History
-- Biography
-
-### Humanities
-- Philosophy
-- Ethics
-- Religion
-- Language
-
-### Arts & Literature
-- Visual Art
-- Music
-- Literature
-- Architecture
-
-### Geography
-- Places & Regions
-- Cities
-- Population & Geography
-
-### Everyday Life
-- Habits
-- Relationships
-- Work
-- Consumer Behavior
-- Travel
-- Lifestyle
-
-### Other
-- 기타 주제
-
-## 🔄 데이터 처리 과정
-
-```text
-PDF 업로드
-    ↓
-텍스트 추출
-    ↓
-Reading 지문 분리
-    ↓
-문항별 데이터 생성
-    ↓
-주제 1차 자동 분류
-    ↓
-검색 / 필터링
-    ↓
-필요한 경우 수동 수정
-    ↓
-CSV 저장
+```bash
+pip install -r requirements.txt
+streamlit run streamlit_app.py
